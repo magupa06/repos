@@ -34,7 +34,8 @@
 }
 
 .margin__la,
-.margin__ke {
+.margin__ke,
+.margin__ca {
     display: block;
     margin-bottom: 20px;
     text-align: center;
@@ -42,7 +43,8 @@
 }
 
 .steps__lasagna,
-.steps__kebab {
+.steps__kebab,
+.steps__carrillera {
     font-size: 20px;
     font-style: italic;
 }
