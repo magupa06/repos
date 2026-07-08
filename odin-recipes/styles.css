@@ -1,0 +1,54 @@
+.body__recipes {
+    font-size: 16px;
+    background-color: orange;
+}
+
+.title__homepage {
+    color: green;
+    text-align: center;
+    font-size: 80px;
+}
+
+.homepage__color {
+    background-color: cyan;
+}
+
+.header__variant{
+    font-size: 80px;
+}
+
+
+.lasagna__order {
+    position: relative;
+}
+
+.kebab__order {
+    position: relative;
+    right: 120px;
+}
+
+.recipe__odin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+.margin__la,
+.margin__ke {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.steps__lasagna,
+.steps__kebab {
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media screen and (max-width: 680px) {
+    .homepage__color {
+        background-color: black;
+    }
+}
