@@ -18,13 +18,10 @@
 }
 
 
-.lasagna__order {
+.lasagna__order,
+.kebab__order,
+.carrillera__order {
     position: relative;
-}
-
-.kebab__order {
-    position: relative;
-    right: 120px;
 }
 
 .recipe__odin {
