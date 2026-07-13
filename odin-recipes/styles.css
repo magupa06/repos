@@ -36,6 +36,36 @@
     color: green;
     text-align: center;
     font-size: 80px;
+    margin-top: 10px;
+}
+
+.usuario__bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 50px;
+}
+
+.login__btn,
+.signup__btn {
+    font-size: 28px;
+}
+
+.login__btn {
+    background-color: red;
+    color: white;
+}
+
+.signup__btn {
+    background-color: green;
+    color: white;
+}
+
+.usuario__title {
+    color: red;
+    font-size: 100px;
+    text-align: center;
 }
 
 .homepage__color {
@@ -68,7 +98,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    padding: 0 15%;
+    padding: 0 300px;
 }
 
 .margin__homepage {

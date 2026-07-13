@@ -1,6 +1,7 @@
 const miTitulo = document.querySelector("h1");
 let miImage = document.querySelector("img");
-let miBoton = document.querySelector("#cambiar-usuario");
+let miBoton = document.querySelector("#login");
+let miBotonSignup = document.querySelector("#signup");
 
 function mostrarBienvenida() {
     let nombre = localStorage.getItem("nombre");
@@ -26,4 +27,8 @@ mostrarBienvenida();
 
 miBoton.onclick = function () {
     window.location.href = "usuario.html";
+}
+
+miBotonSignup.onclick = function () {
+    window.location.href = "registro.html";
 }
