@@ -58,8 +58,19 @@
 }
 
 .signup__btn {
-    background-color: green;
+    background-color:green;
     color: white;
+}
+
+.lasagna__btn,
+.carrillera__btn,
+.kebab__btn,
+.shushi__btn {
+    background-color: grey;
+    color: white;
+    font-size: 28px;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
 .usuario__title {
@@ -104,7 +115,7 @@
 .margin__homepage {
     display: block;
     margin-bottom: 20px;
-    font-size: 40px;
+    font-size: 36px;
 }
 
 .kebab__centered {
@@ -135,8 +146,16 @@
 }
 
 .links__th {
-    display: flex;
+    display: inline-block;
     font-size: 20px;
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.links__position {
+    display: flex;
     justify-content: flex-end;
 }
 

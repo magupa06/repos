@@ -32,3 +32,31 @@ miBoton.onclick = function () {
 miBotonSignup.onclick = function () {
     window.location.href = "registro.html";
 }
+
+let lasagnaBox = document.querySelector(".lasagna__box");
+if (lasagnaBox) {
+    lasagnaBox.onclick = function () {
+        window.location.href = "recipes/lasagna.html";
+    }
+}
+
+let carrilleraBox = document.querySelector(".carrillera__box");
+if (carrilleraBox) {
+    carrilleraBox.onclick = function () {
+        window.location.href = "recipes/carrillera.html";
+    }
+}
+
+let kebabBox = document.querySelector(".kebab__box");
+if (kebabBox) {
+    kebabBox.onclick = function () {
+        window.location.href = "recipes/kebab.html";
+    }
+}
+
+let shushiBox = document.querySelector(".shushi__box");
+if (shushiBox) {
+    shushiBox.onclick = function () {
+        window.location.href = "recipes/shushi.html";
+    }
+}
