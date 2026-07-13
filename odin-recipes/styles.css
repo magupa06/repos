@@ -154,9 +154,19 @@
     text-decoration: none;
 }
 
+.link_registro {
+    color: blue;
+}
+
 .links__position {
     display: flex;
     justify-content: flex-end;
+}
+.link__pregistro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
 }
 
 .usuario__color {
