@@ -1,8 +1,18 @@
 const miTitulo = document.querySelector("h1");
 let miImage = document.querySelector("img");
-let miBoton = document.querySelector("button");
+let miBoton = document.querySelector("#cambiar-usuario");
 
-miTitulo.textContent = "Odin Recipes"
+function mostrarBienvenida() {
+    let nombre = localStorage.getItem("nombre");
+    let apellido = localStorage.getItem("apellido");
+
+    if (nombre && apellido) {
+        let inicialApellido = apellido.charAt(0).toUpperCase();
+        miTitulo.textContent = "Bienvenido, " + nombre + " " + inicialApellido + ".";
+    } else {
+        miTitulo.textContent = "Odin Recipes";
+    }
+}
 
 miImage.onclick = function () {
     let miSrc = miImage.getAttribute("src");
@@ -10,25 +20,10 @@ miImage.onclick = function () {
     } else {
         miImage.setAttribute("src", "../images/kebab.jpg")
     }
-} 
-
-function estableceNombreUsuario() {
-    let miNombre = prompt("Introduzca su nombre: ");
-    if(!miNombre) {
-        estableceNombreUsuario();
-    } else {
-        localStorage.setItem("nombre", miNombre);
-        miTitulo.innerHTML = "Bienvenido, " + miNombre;
-    }
 }
 
-if(!localStorage.getItem("nombre")) {
-    estableceNombreUsuario();
-} else {
-    let nombreAlmacenado = localStorage.getItem("nombre");
-    miTitulo.textContent = "Bienvenido," + nombreAlmacenado;
-}
+mostrarBienvenida();
 
 miBoton.onclick = function () {
-    estableceNombreUsuario();
+    window.location.href = "usuario.html";
 }
