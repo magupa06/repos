@@ -1,47 +1,35 @@
-.body__recipes {
+/* ==========================================================================
+   Global — navigation links (used on the recipe pages, usuario.html and
+   registro.html)
+   ========================================================================== */
+
+.links__position {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.links__th {
+    display: inline-block;
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.links__login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px
+}
+
+/* ==========================================================================
+   index.html — Homepage
+   ========================================================================== */
+
+.homepage__color {
     background-color: orange;
-}
-
-.padding__ifnec {
-    padding-left: 80px;
-}
-
-.ingredients__pos {
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.ingredients__order {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-.lasagna__centered,
-.ingredients__col,
-.steps__col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    max-width: 500px;
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-}
-
-.recipe__intro {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 80px;
-}
-
-.title__homepage {
-    text-align: center;
-    font-size: 80px;
-    margin-top: 10px;
 }
 
 .usuario__bar {
@@ -67,47 +55,10 @@
     color: white;
 }
 
-.lasagna__btn,
-.carrillera__btn,
-.kebab__btn,
-.shushi__btn {
-    background-color: rgb(222, 152, 22);
-    color: white;
-    font-size: 28px;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
-.usuario__title {
-    color: red;
-    font-size: 100px;
+.title__homepage {
     text-align: center;
-}
-
-.homepage__color {
-    background-color: orange;
-}
-
-.header__variant{
-    display: flex;
-    justify-content: center;
     font-size: 80px;
-}
-
-.separation__now {
-    display: block;
-    margin-bottom: 60px;
-}
-
-.lasagna__order,
-.kebab__order,
-.carrillera__order,
-.shushi__order {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
+    margin-top: 10px;
 }
 
 .homepage__layout {
@@ -158,12 +109,6 @@
     background-color: #f0f0f0;
 }
 
-.recipe__odin {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1;
-}
-
 @media screen and (max-width: 700px) {
     .homepage__layout {
         flex-direction: column;
@@ -176,11 +121,63 @@
     }
 }
 
-.margin__homepage {
-    display: block;
-    margin-bottom: 20px;
-    font-size: 36px;
+/* ==========================================================================
+   recipes/*.html — Recipe pages (lasagna, carrillera, kebab, shushi)
+   ========================================================================== */
+
+.body__recipes {
+    background-color: orange;
 }
+
+.header__variant {
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+}
+
+/* lasagna.html */
+
+.recipe__layout {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.lasagna__centered,
+.ingredients__col,
+.steps__col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+/* carrillera.html and shushi.html */
+
+.padding__ifnec {
+    padding-left: 80px;
+}
+
+.recipe__intro {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 80px;
+}
+
+.ingredients__pos {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* kebab.html */
 
 .kebab__centered {
     display: flex;
@@ -193,44 +190,41 @@
     word-wrap: break-word;
 }
 
-.recipe__layout {
+.ingredients__order {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
+    flex-direction: column;
+    gap: 0;
 }
+
+.ingredients__order p {
+    margin: 4px 0;
+}
+
+/* Steps lists shared across all recipe pages */
 
 .steps__lasagna,
 .steps__kebab,
 .steps__carrillera,
 .steps__shushi {
     font-size: 20px;
-    font-style: italic;
 }
 
-.links__th {
-    display: inline-block;
-    font-size: 20px;
-    background-color: blue;
-    color: white;
-    padding: 8px 16px;
-    text-decoration: none;
+.steps__kebab {
+    text-align: left;
 }
 
-.links__position {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 20px;
-}
-.links__login {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px
-}
+/* ==========================================================================
+   usuario.html and registro.html
+   ========================================================================== */
 
 .usuario__color {
     background-color: #eaf4f4;
+}
+
+.usuario__title {
+    color: red;
+    font-size: 100px;
+    text-align: center;
 }
 
 .form__usuario {
@@ -254,12 +248,9 @@
     padding: 8px;
 }
 
-.orden__pagina {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    color: white;
-}
+/* ==========================================================================
+   Global — responsive dark mode (index.html and recipe pages)
+   ========================================================================== */
 
 @media screen and (max-width: 700px) {
     .homepage__color,
