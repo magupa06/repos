@@ -104,10 +104,70 @@
     margin-bottom: 60px;
 }
 
+.homepage__layout {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 0 60px;
+}
+
+.recipe__index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 220px;
+    background-color: rgb(222, 152, 22);
+    padding: 20px;
+}
+
+.recipe__index-title {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+
+.recipe__index-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.recipe__index-link {
+    display: block;
+    background-color: white;
+    color: rgb(222, 152, 22);
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.recipe__index-link:hover {
+    background-color: #f0f0f0;
+}
+
 .recipe__odin {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 300px;
+    flex: 1;
+}
+
+@media screen and (max-width: 700px) {
+    .homepage__layout {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .recipe__index {
+        position: static;
+        width: 100%;
+    }
 }
 
 .margin__homepage {
