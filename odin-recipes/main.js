@@ -15,11 +15,13 @@ function mostrarBienvenida() {
     }
 }
 
-miImage.onclick = function () {
-    let miSrc = miImage.getAttribute("src");
-    if (miSrc === "../images/kebab.jpg") {
-    } else {
-        miImage.setAttribute("src", "../images/kebab.jpg")
+if (miImage) {
+    miImage.onclick = function () {
+        let miSrc = miImage.getAttribute("src");
+        if (miSrc === "../images/kebab.jpg") {
+        } else {
+            miImage.setAttribute("src", "../images/kebab.jpg")
+        }
     }
 }
 
