@@ -28,8 +28,14 @@
    index.html — Homepage
    ========================================================================== */
 
-.homepage__color {
+.homepage__structure {
     background-color: orange;
+}
+
+.libro__recetas {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px
 }
 
 .usuario__bar {
@@ -63,9 +69,7 @@
 
 .homepage__layout {
     display: flex;
-    justify-content: center;
     gap: 90px;
-    padding: 0 60px;
 }
 
 .recipe__index {
