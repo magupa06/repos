@@ -141,10 +141,7 @@
 
 /* Shared centered layout (kebab.html, carrillera.html, shushi.html, lasagna.html) */
 
-.kebab__centered,
-.carrillera__centered,
-.shushi__centered,
-.lasagna__centered {
+.recipe__centered {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -153,6 +150,12 @@
     margin: 0 auto;
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+.recipe__centered img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .ingredients__order {
@@ -167,10 +170,7 @@
 
 /* Steps lists shared across all recipe pages */
 
-.steps__lasagna,
-.steps__kebab,
-.steps__carrillera,
-.steps__shushi {
+.steps__lista{
     font-size: 20px;
     text-align: left;
 }
