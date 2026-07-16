@@ -230,7 +230,8 @@ body.dark .title__homepage,
 body.dark .header__variant,
 body.dark h2,
 body.dark p,
-body.dark li {
+body.dark li,
+body.dark label {
     color: #f0f0f0;
 }
 
