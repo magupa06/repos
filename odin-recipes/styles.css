@@ -84,7 +84,7 @@
 .recipe__index {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex: 0 0 220px;
     background-color: rgb(222, 152, 22);
     padding: 20px;
@@ -121,6 +121,16 @@
     background-color: #f0f0f0;
 }
 
+.recipe__sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 @media screen and (max-width: 700px) {
     .homepage__layout {
         flex-direction: column;
@@ -130,6 +140,13 @@
     .recipe__index {
         position: static;
         width: 100%;
+        flex: 1 1 auto;
+    }
+
+    .recipe__sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
     }
 }
 
