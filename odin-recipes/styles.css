@@ -218,12 +218,11 @@
     cursor: pointer;
 }
 
-body.dark.homepage__structure,
-body.dark.body__recipes {
+body.dark.web__color {
     background-color: #121212;
 }
 
-body.dark .usuario__color {
+body.dark.usuario__color {
     background-color: #1c1c1c;
 }
 
@@ -238,15 +237,4 @@ body.dark li {
 body.dark .recipe__index-link {
     background-color: #2a2a2a;
     color: #f0f0f0;
-}
-
-/* ==========================================================================
-   Global — dark mode (index.html and recipe pages)
-   ========================================================================== */
-
-@media screen and (max-width: 700px) {
-    .homepage__color,
-    .body__recipes {
-        background-color: black;
-    }
 }
