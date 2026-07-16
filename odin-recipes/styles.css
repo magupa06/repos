@@ -5,8 +5,17 @@
 
 .links__position {
     display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    gap: 20px
+}
+
+.link__position {
+    display: flex;
     justify-content: flex-end;
     margin-top: 20px;
+    gap: 20px
 }
 
 .links__th {
@@ -105,7 +114,6 @@
     font-weight: bold;
     text-decoration: none;
     padding: 8px 12px;
-    border-radius: 4px;
     text-align: center;
 }
 
@@ -215,7 +223,6 @@
     color: white;
     border: none;
     padding: 8px 16px;
-    cursor: pointer;
 }
 
 body.dark.web__color {
