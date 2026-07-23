@@ -10,7 +10,6 @@ if (receta) {
     img.src = receta.imagen;
     img.alt = receta.titulo;
 
-    // Ingredientes: uno <p> por cada ingrediente
     const contenedorIngredientes = document.getElementById("recipe-ingredients");
     receta.ingredientes.forEach(ingrediente => {
         const p = document.createElement("p");
@@ -18,7 +17,6 @@ if (receta) {
         contenedorIngredientes.appendChild(p);
     });
 
-    // Pasos: uno <li> por cada paso
     const listaPasos = document.getElementById("recipe-steps");
     receta.pasos.forEach(paso => {
         const li = document.createElement("li");
