@@ -23,6 +23,18 @@ if (receta) {
         li.textContent = paso;
         listaPasos.appendChild(li);
     });
+    const lista = document.getElementById("recipe-index-list");
+    recetas
+        .filter(r => r.id !== idBuscado)
+        .forEach(r => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.className = "recipe__index-link";
+            a.href = `receta.html?id=${r.id}`;
+            a.textContent = r.titulo;
+            li.appendChild(a);
+            lista.appendChild(li);
+        });
 } else {
     document.getElementById("recipe-title").textContent = "Receta no encontrada";
 }
